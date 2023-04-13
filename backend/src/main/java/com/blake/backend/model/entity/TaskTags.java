@@ -24,7 +24,7 @@ public class TaskTags implements Serializable {
     private static final long serialVersionUID = 1L;
 
     @Id
-    @Column(name = "id", nullable = false)
+    @Column(name = "task_tags_id", nullable = false)
     private Integer id;
 
     @Column(name = "task_id", nullable = false)

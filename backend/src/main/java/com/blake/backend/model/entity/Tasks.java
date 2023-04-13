@@ -24,23 +24,23 @@ public class Tasks implements Serializable {
     private static final long serialVersionUID = 1L;
 
     @Id
-    @Column(name = "id", nullable = false)
+    @Column(name = "task_id", nullable = false)
     private Integer id;
 
-    @Column(name = "name", nullable = false)
-    private String name;
+    @Column(name = "task_name", nullable = false)
+    private String taskName;
 
     @Column(name = "calendar_id", nullable = false)
     private Integer calendarId;
 
-    @Column(name = "content")
-    private String content;
+    @Column(name = "task_content")
+    private String tastContent;
 
-    @Column(name = "start_date", nullable = false, columnDefinition = "TIMESTAMP")
-    private LocalDateTime startDate;
+    @Column(name = "task_start_date", nullable = false, columnDefinition = "TIMESTAMP")
+    private LocalDateTime taskStartDate;
 
-    @Column(name = "end_date", columnDefinition = "TIMESTAMP")
-    private LocalDateTime endDate;
+    @Column(name = "task_due_date", columnDefinition = "TIMESTAMP")
+    private LocalDateTime taskDueDate;
 
     @Column(name = "task_status")
     private Integer taskStatus;

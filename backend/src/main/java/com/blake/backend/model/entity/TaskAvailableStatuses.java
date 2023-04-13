@@ -28,11 +28,11 @@ public class TaskAvailableStatuses implements Serializable {
     @Column(name = "calendar_id", nullable = false)
     private Integer calendarId;
 
-    @Column(name = "name", nullable = false)
-    private String name;
+    @Column(name = "status_name", nullable = false)
+    private String statusName;
 
-    @Column(name = "color", nullable = false)
-    private String color;
+    @Column(name = "status_color", nullable = false)
+    private String statusColor;
 
     @Column(name = "create_date", nullable = false, columnDefinition = "TIMESTAMP")
     private LocalDateTime createDate;

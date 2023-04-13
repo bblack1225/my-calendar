@@ -21,24 +21,24 @@ public class Subtasks implements Serializable {
     private static final long serialVersionUID = 1L;
 
     @Id
-    @Column(name = "id", nullable = false)
+    @Column(name = "subtask_id", nullable = false)
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    @Column(name = "name", nullable = false)
-    private String name;
+    @Column(name = "subtask_name", nullable = false)
+    private String subtaskName;
 
     @Column(name = "task_id", nullable = false)
     private Integer taskId;
 
-    @Column(name = "completed")
-    private boolean completed;
+    @Column(name = "is_completed")
+    private boolean isCompleted;
 
-    @Column(name = "sequence")
-    private Integer sequence;
+    @Column(name = "subtask_order")
+    private Integer subtaskOrder;
 
-    @Column(name = "content")
-    private String content;
+    @Column(name = "subtask_content")
+    private String subtaskContent;
 
     @Column(name = "create_date", nullable = false, columnDefinition = "TIMESTAMP")
     private LocalDateTime createDate;

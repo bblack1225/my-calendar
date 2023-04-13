@@ -21,15 +21,15 @@ public class Calendars implements Serializable {
     private static final long serialVersionUID = 1L;
 
     @Id
-    @Column(name = "id", nullable = false)
+    @Column(name = "calendar_id", nullable = false)
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
     @Column(name = "user_id", nullable = false)
     private Integer userId;
 
-    @Column(name = "name", nullable = false)
-    private String name;
+    @Column(name = "calendar_name", nullable = false)
+    private String calendarName;
 
     @Column(name = "create_date", nullable = false, columnDefinition = "TIMESTAMP")
     private LocalDateTime createDate;

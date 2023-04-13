@@ -27,14 +27,14 @@ public class Users implements Serializable {
     @Column(name = "id", nullable = false)
     private Integer id;
 
-    @Column(name = "full_name", nullable = false)
-    private String fullName;
+    @Column(name = "user_full_name", nullable = false)
+    private String userFullName;
 
-    @Column(name = "email", nullable = false)
-    private String email;
+    @Column(name = "user_email", nullable = false)
+    private String userEmail;
 
-    @Column(name = "password", nullable = false)
-    private String password;
+    @Column(name = "user_password", nullable = false)
+    private String userPassword;
 
     @Column(name = "registration_method", nullable = false)
     private String registrationMethod;
